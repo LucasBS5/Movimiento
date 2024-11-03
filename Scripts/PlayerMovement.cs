@@ -7,13 +7,13 @@ public class PlayerMovement : MonoBehaviour
     public float velocity = 2f;
 
     
-    private Rigidbody rb; // Referencia al Rigidbody
+    private Rigidbody rb;
     private Transform cam;
 
     void Start()
     {
         cam = transform.Find("MainCamera");
-        rb = GetComponent<Rigidbody>(); // Obtiene el Rigidbody
+        rb = GetComponent<Rigidbody>(); // aca llama al rigidbody
     }
 
     void Update()
